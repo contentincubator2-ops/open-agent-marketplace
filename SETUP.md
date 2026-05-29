@@ -23,7 +23,7 @@ npm run validate
 npm run demo
 ```
 
-Open `http://localhost:4173`.
+Open `http://localhost:4173/app/web/`.
 
 ## Use the data in another app
 

@@ -38,7 +38,7 @@ npm run demo
 Then open:
 
 ```txt
-http://localhost:4173
+http://localhost:4173/app/web/
 ```
 
 ## Directory structure

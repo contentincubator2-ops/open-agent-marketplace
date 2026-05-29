@@ -6,7 +6,7 @@
   "scripts": {
     "validate": "node scripts/validate-agents.js",
     "sweep": "node scripts/sensitivity-sweep.js",
-    "demo": "npx http-server app/web -p 4173 -c-1"
+    "demo": "npx http-server . -p 4173 -c-1"
   },
   "devDependencies": {
     "http-server": "^14.1.1"
