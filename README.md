@@ -1,10 +1,12 @@
 # Open Agent Marketplace
 
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Agents](https://img.shields.io/badge/agents-528-brightgreen.svg)](#) [![Curated Pack](https://img.shields.io/badge/curated_pack-500-blue.svg)](agents/public-curated-500) [![Squads](https://img.shields.io/badge/squads-8-orange.svg)](#) [![Workflows](https://img.shields.io/badge/workflows-6-purple.svg)](#) [![Release](https://img.shields.io/github/v/release/contentincubator2-ops/open-agent-marketplace)](https://github.com/contentincubator2-ops/open-agent-marketplace/releases) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Agents](https://img.shields.io/badge/agents-528-brightgreen.svg)](#) [![Curated Pack](https://img.shields.io/badge/curated_pack-500-blue.svg)](agents/public-curated-500) [![Squads](https://img.shields.io/badge/squads-8-orange.svg)](#) [![Workflows](https://img.shields.io/badge/workflows-6-purple.svg)](#) [![Release](https://img.shields.io/github/v/release/contentincubator2-ops/open-agent-marketplace)](https://github.com/contentincubator2-ops/open-agent-marketplace/releases) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md) [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen.svg)](https://open-agent-marketplace.vercel.app)
 
 **Build your own AI marketing team marketplace — with reusable agent profiles, squad recipes, workflow templates, sample cases, and evaluation rubrics.**
 
 Open Agent Marketplace is an open-source starter kit for builders, agencies, founders, and marketing teams who want to compose AI agents into working marketing squads. Instead of shipping a raw agent list, the repo gives you public-safe schemas, fictional sample agents, outcome-based squad recipes, workflow handoffs, and a lightweight browser demo.
+
+> **[🚀 Live Demo →](https://open-agent-marketplace.vercel.app)**
 
 ```txt
 > Open Agent Marketplace
@@ -63,7 +65,7 @@ This repo focuses on the **missing operating layer** for marketing work: which m
 - **6 workflow templates** — positioning-to-campaign, content-engine, paid-ads, SEO, email-lifecycle, social-listening
 - **5 fictional marketing case packs** — B2B SaaS launch, DTC skincare, local dental lead gen, online course funnel, ecommerce marketplace listing
 - Agent quality rubric and sample eval cases
-- Lightweight browser demo UI
+- Lightweight browser demo UI ([live →](https://open-agent-marketplace.vercel.app))
 - Validation scripts and sensitivity sweep for public-release safety
 - MIT License, CONTRIBUTING guide, SECURITY policy
 
@@ -85,6 +87,8 @@ npm run demo
 ```
 
 Then open: `http://localhost:4173/app/web/`
+
+Or try the **[Live Demo](https://open-agent-marketplace.vercel.app)** without any setup.
 
 ## Directory structure
 
