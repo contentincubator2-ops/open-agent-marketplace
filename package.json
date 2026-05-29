@@ -2,7 +2,7 @@
   "name": "open-agent-marketplace",
   "version": "0.1.0",
   "private": false,
-  "description": "Open-source starter kit for building searchable AI agent marketplaces.",
+  "description": "Open-source Marketing Agent OS starter kit with agent profiles, squad recipes, workflows, and eval rubrics.",
   "scripts": {
     "validate": "node scripts/validate-agents.js",
     "sweep": "node scripts/sensitivity-sweep.js",
@@ -13,8 +13,11 @@
   },
   "keywords": [
     "ai-agents",
-    "marketplace",
+    "marketing-agents",
+    "agent-marketplace",
     "agent-squads",
+    "marketing-automation",
+    "growth",
     "open-source",
     "skills",
     "directory"

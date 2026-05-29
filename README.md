@@ -1,29 +1,48 @@
 # Open Agent Marketplace
 
-An open-source starter kit for building searchable AI agent marketplaces.
+**Build your own AI marketing team marketplace — with reusable agent profiles, squad recipes, workflow templates, sample cases, and evaluation rubrics.**
 
-Browse reusable agent profiles, organize them into squads, bind them to skills, and expose them through a simple marketplace UI or API.
-
-Inspired by the open `SKILL.md` ecosystem, this repo focuses on the next layer: **agent profiles, team composition, and workflow-ready AI squads**.
+Open Agent Marketplace is an open-source starter kit for builders, agencies, founders, and marketing teams who want to compose AI agents into working marketing squads. Instead of shipping a raw agent list, the repo gives you public-safe schemas, fictional sample agents, outcome-based squad recipes, workflow handoffs, and a lightweight browser demo.
 
 ```txt
 > Open Agent Marketplace
-> for building AI agent teams from reusable agent profiles
+> Marketing Agent OS for reusable AI teams
 
-const agents = 16102;
-// Discover, filter, and compose open-source AI agents
+const agents = 28;
+const squads = 8;
+// Discover, compose, run, and evaluate AI marketing teams
 ```
+
+## Why this exists
+
+Most AI-agent repos stop at one of three layers:
+
+1. a list of tools,
+2. a single automation demo, or
+3. a generic agent marketplace shell.
+
+This repo focuses on the missing operating layer for marketing work:
+
+- Which marketing agents should exist?
+- How should they be grouped into teams?
+- What inputs and outputs should each workflow require?
+- How should agent work be evaluated before it reaches a customer?
+- How can contributors add new agents safely without leaking private data?
 
 ## What this includes
 
 - Public agent profile schema
 - Squad composition schema
 - Skill binding schema
-- Fictionalized sample agents and squads
+- 28 fictional, public-safe sample agents
+- 8 outcome-based marketing squad recipes
+- Workflow templates for launch, content, SEO, paid ads, lifecycle, and social listening
+- Marketing case packs with fictional briefs and expected deliverables
+- Agent quality rubric and sample eval cases
 - A lightweight browser demo inspired by developer-directory products
 - Validation scripts for agent / squad JSON
-- Sanitization policy for turning private agent databases into safe public examples
-- [Marketing Agent Open Repo Roadmap](docs/marketing-agent-open-repo-roadmap.md) — what to add next to make this a high-conviction Marketing Agent OS
+- Sensitivity sweep for public-release safety
+- [Marketing Agent Open Repo Roadmap](docs/marketing-agent-open-repo-roadmap.md)
 
 ## What this is not
 
@@ -32,7 +51,9 @@ This repository is **not** a dump of any private database. It intentionally excl
 ## Quick start
 
 ```bash
+npm install
 npm run validate
+npm run sweep
 npm run demo
 ```
 
@@ -45,39 +66,81 @@ http://localhost:4173/app/web/
 ## Directory structure
 
 ```txt
-docs/       Public design, schema, architecture, and sanitization docs
-schema/     JSON schemas for agents, squads, and skills
-data/       Fictional sample data
-examples/   Markdown examples for public agent and squad profiles
-app/web/    Minimal marketplace UI demo
-scripts/    Validation and export helper scripts
+.github/     Contribution templates and CI
+app/web/     Minimal marketplace UI demo
+data/        Fictional sample data
+docs/        Public design, schema, taxonomy, rubric, and roadmap docs
+evals/       Marketing-agent evaluation cases and sample results
+examples/    Agent, squad, and marketing-case examples
+launch/      Public launch copy and distribution assets
+recipes/     Ready-to-copy marketing squad recipes
+schema/      JSON schemas for agents, squads, and skills
+templates/   Reusable agent, squad, and workflow templates
+workflows/   Marketing workflow templates with inputs, handoffs, and rubrics
+scripts/     Validation and export helper scripts
 ```
 
 ## Core concepts
 
 ### Agent
-A reusable AI worker profile with a role, skill set, operating style, example tasks, pricing tier, and install/copy metadata.
+
+A reusable AI worker profile with a role, skill set, operating style, example tasks, marketing channel expertise, funnel coverage, deliverables, and quality expectations.
 
 ### Squad
-A prebuilt team of agents designed around a real workflow such as launching a SaaS product, running an ecommerce growth sprint, or building a content engine.
 
-### Skill binding
-A link between an agent profile and one or more executable skills, prompts, tools, or workflow definitions.
+A prebuilt team of agents designed around a business outcome such as launching a SaaS product, growing ecommerce revenue, running ABM, building a content engine, or improving local lead generation.
+
+### Workflow
+
+A reusable operating pattern that defines inputs, agent handoffs, outputs, and review criteria. Workflows make the marketplace operational instead of merely searchable.
+
+### Evaluation rubric
+
+A public checklist for reviewing agent outputs before they are shipped. Marketing work is evaluated for audience specificity, channel fit, strategic clarity, evidence quality, brand voice, and actionability.
 
 ## Example agent
 
 ```json
 {
-  "slug": "growth-strategist",
-  "name": "Maya Chen",
-  "title": "Growth Strategist",
+  "slug": "positioning-strategist",
+  "name": "Nora Ellis",
+  "title": "Positioning Strategist",
   "layer": "strategy",
-  "category": "Growth",
-  "primarySkill": "growth-strategy",
-  "industries": ["SaaS", "Ecommerce", "Creator Economy"],
-  "pricingTier": "starter",
-  "summary": "Designs acquisition loops, activation experiments, and early traction plans."
+  "category": "Strategy",
+  "primarySkill": "positioning",
+  "channelExpertise": ["Landing Pages", "Sales Enablement", "Product Marketing"],
+  "funnelStage": ["consideration", "conversion"],
+  "deliverables": ["positioning brief", "message map", "differentiation matrix"],
+  "summary": "Turns market context, customer pain, and product proof into crisp positioning."
 }
+```
+
+## Example squads
+
+- `saas-launch-squad` — positioning, launch page, content, lifecycle, and measurement
+- `ecommerce-growth-squad` — product page, paid ads, UGC, email/SMS, and ROAS review
+- `b2b-abm-squad` — ICP, account research, outbound, LinkedIn, and sales collateral
+- `local-service-lead-gen-squad` — local SEO, paid search, reviews, landing pages, CRM follow-up
+- `creator-growth-squad` — content strategy, shorts, newsletter, community, analytics
+
+See `recipes/marketing-squads/` and `data/squads.sample.json`.
+
+## Public-safe contribution model
+
+Contributions are welcome when they add reusable, fictional or public-safe assets:
+
+- agent profiles
+- squad recipes
+- workflow templates
+- eval cases
+- taxonomy improvements
+- demo UI improvements
+
+Before opening a PR:
+
+```bash
+npm run validate
+npm run sweep
 ```
 
 ## License

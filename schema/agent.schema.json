@@ -65,6 +65,48 @@
     },
     "updatedAt": {
       "type": "string"
+    },
+    "channelExpertise": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "funnelStage": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "awareness",
+          "consideration",
+          "conversion",
+          "retention",
+          "referral"
+        ]
+      }
+    },
+    "deliverables": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "qualityRubrics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "riskFlags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "additionalProperties": true
