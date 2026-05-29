@@ -4,6 +4,8 @@
 
 Open Agent Marketplace is an open-source starter kit for builders, agencies, founders, and marketing teams who want to compose AI agents into working marketing squads. Instead of shipping a raw agent list, the repo gives you public-safe schemas, fictional sample agents, outcome-based squad recipes, workflow handoffs, and a lightweight browser demo.
 
+
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Agents](https://img.shields.io/badge/agents-528-brightgreen.svg)](#) [![Squads](https://img.shields.io/badge/squads-8-orange.svg)](#) [![Workflows](https://img.shields.io/badge/workflows-6-purple.svg)](#) [![Release](https://img.shields.io/github/v/release/contentincubator2-ops/open-agent-marketplace)](https://github.com/contentincubator2-ops/open-agent-marketplace/releases) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 ```txt
 > Open Agent Marketplace
 > Marketing Agent OS for reusable AI teams
