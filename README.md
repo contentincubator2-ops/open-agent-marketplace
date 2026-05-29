@@ -23,6 +23,7 @@ const agents = 16102;
 - A lightweight browser demo inspired by developer-directory products
 - Validation scripts for agent / squad JSON
 - Sanitization policy for turning private agent databases into safe public examples
+- [Marketing Agent Open Repo Roadmap](docs/marketing-agent-open-repo-roadmap.md) — what to add next to make this a high-conviction Marketing Agent OS
 
 ## What this is not
 
