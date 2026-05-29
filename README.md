@@ -8,9 +8,9 @@ Open Agent Marketplace is an open-source starter kit for builders, agencies, fou
 > Open Agent Marketplace
 > Marketing Agent OS for reusable AI teams
 
-const agents = 28;
+const agents = 528;
 const squads = 8;
-// Discover, compose, run, and evaluate AI marketing teams
+// 28 starter agents + 500 public-safe curated profiles
 ```
 
 ## Why this exists
@@ -35,6 +35,7 @@ This repo focuses on the missing operating layer for marketing work:
 - Squad composition schema
 - Skill binding schema
 - 28 fictional, public-safe sample agents
+- 500 public-safe curated agent profiles derived from a private 16,000+ agent library
 - 8 outcome-based marketing squad recipes
 - Workflow templates for launch, content, SEO, paid ads, lifecycle, and social listening
 - Marketing case packs with fictional briefs and expected deliverables
@@ -43,6 +44,8 @@ This repo focuses on the missing operating layer for marketing work:
 - Validation scripts for agent / squad JSON
 - Sensitivity sweep for public-release safety
 - [Marketing Agent Open Repo Roadmap](docs/marketing-agent-open-repo-roadmap.md)
+- [Private 16,000+ Agent Library](docs/16000-agent-library.md)
+- [Public Agent Release Policy](docs/release-policy.md)
 
 ## What this is not
 
@@ -67,8 +70,9 @@ http://localhost:4173/app/web/
 
 ```txt
 .github/     Contribution templates and CI
+agents/      Public curated agent packs
 app/web/     Minimal marketplace UI demo
-data/        Fictional sample data
+data/        Fictional sample data and public curated JSON packs
 docs/        Public design, schema, taxonomy, rubric, and roadmap docs
 evals/       Marketing-agent evaluation cases and sample results
 examples/    Agent, squad, and marketing-case examples

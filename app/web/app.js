@@ -6,7 +6,9 @@ function agentCard(a){
 function squadCard(s){ return `<article class="card"><h3>${s.slug}.json</h3><p><b>${s.name}</b></p><p>${s.summary}</p>${tags(s.agents)}<p class="outputs">Outputs: ${(s.outputs || []).join(', ')}</p></article>`; }
 function matchesAgent(a, q){ return JSON.stringify(a).toLowerCase().includes(q.toLowerCase()); }
 async function main(){
-  const agents = await loadJson('/data/agents.sample.json');
+  const sampleAgents = await loadJson('/data/agents.sample.json');
+  const publicAgents = await loadJson('/data/agents.public-curated-500.json').catch(() => []);
+  const agents = [...sampleAgents, ...publicAgents];
   const squads = await loadJson('/data/squads.sample.json');
   const grid = document.getElementById('agentGrid');
   const count = document.getElementById('agentCount');

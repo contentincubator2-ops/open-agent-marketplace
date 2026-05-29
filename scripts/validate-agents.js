@@ -9,7 +9,11 @@ function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
 
-const agents = readJson('data/agents.sample.json');
+const sampleAgents = readJson('data/agents.sample.json');
+const publicAgents = fs.existsSync(path.join(__dirname, '..', 'data/agents.public-curated-500.json'))
+  ? readJson('data/agents.public-curated-500.json')
+  : [];
+const agents = [...sampleAgents, ...publicAgents];
 const squads = readJson('data/squads.sample.json');
 const skills = readJson('data/skills.sample.json');
 
@@ -20,6 +24,7 @@ for (const agent of agents) {
   }
   assert(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(agent.slug), `Bad slug: ${agent.slug}`);
   assert(!agentSlugs.has(agent.slug), `Duplicate agent slug: ${agent.slug}`);
+  assert(Array.isArray(agent.exampleTasks) && agent.exampleTasks.length > 0, `Agent missing exampleTasks: ${agent.slug}`);
   agentSlugs.add(agent.slug);
 }
 

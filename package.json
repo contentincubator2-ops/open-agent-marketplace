@@ -5,7 +5,9 @@
   "description": "Open-source Marketing Agent OS starter kit with agent profiles, squad recipes, workflows, and eval rubrics.",
   "scripts": {
     "validate": "node scripts/validate-agents.js",
-    "sweep": "node scripts/sensitivity-sweep.js",
+    "sweep": "node scripts/sensitivity-sweep.js && node scripts/sensitivity-sweep-agents.js",
+    "sweep:agents": "node scripts/sensitivity-sweep-agents.js",
+    "export:public-agents": "node scripts/export-public-agents.js",
     "demo": "npx http-server . -p 4173 -c-1"
   },
   "devDependencies": {
