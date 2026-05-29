@@ -1,0 +1,178 @@
+[
+  {
+    "slug": "growth-strategist",
+    "name": "Maya Chen",
+    "title": "Growth Strategist",
+    "layer": "strategy",
+    "category": "Growth",
+    "primarySkill": "growth-strategy",
+    "industries": [
+      "SaaS",
+      "Ecommerce",
+      "Creator Economy"
+    ],
+    "summary": "Designs acquisition loops, activation experiments, and early traction plans.",
+    "exampleTasks": [
+      "Map a 30-day acquisition sprint",
+      "Prioritize growth channels",
+      "Design referral loop tests"
+    ],
+    "pricingTier": "starter",
+    "source": "sowork/open-agent-marketplace",
+    "updatedAt": "2026-05-29"
+  },
+  {
+    "slug": "content-engineer",
+    "name": "Leo Park",
+    "title": "Content Systems Engineer",
+    "layer": "execution",
+    "category": "Content",
+    "primarySkill": "content-production",
+    "industries": [
+      "B2B",
+      "SaaS",
+      "Media"
+    ],
+    "summary": "Builds repeatable content systems from positioning into posts, pages, newsletters, and scripts.",
+    "exampleTasks": [
+      "Turn strategy into a monthly content calendar",
+      "Create reusable content templates",
+      "Repurpose one article into multi-channel assets"
+    ],
+    "pricingTier": "team",
+    "source": "sowork/open-agent-marketplace",
+    "updatedAt": "2026-05-29"
+  },
+  {
+    "slug": "ux-researcher",
+    "name": "Ava Lin",
+    "title": "UX Researcher",
+    "layer": "strategy",
+    "category": "Product",
+    "primarySkill": "customer-research",
+    "industries": [
+      "SaaS",
+      "Marketplace",
+      "Consumer Apps"
+    ],
+    "summary": "Finds user friction, maps behavior patterns, and converts research into product decisions.",
+    "exampleTasks": [
+      "Review onboarding friction",
+      "Write interview questions",
+      "Synthesize user feedback into product opportunities"
+    ],
+    "pricingTier": "starter",
+    "source": "sowork/open-agent-marketplace",
+    "updatedAt": "2026-05-29"
+  },
+  {
+    "slug": "frontend-builder",
+    "name": "Noah Rivera",
+    "title": "Frontend Builder",
+    "layer": "execution",
+    "category": "Engineering",
+    "primarySkill": "frontend-development",
+    "industries": [
+      "SaaS",
+      "Developer Tools",
+      "Ecommerce"
+    ],
+    "summary": "Ships polished marketplace pages, dashboards, and searchable directories.",
+    "exampleTasks": [
+      "Implement responsive card grid",
+      "Build search and filter UI",
+      "Connect static JSON data to a demo app"
+    ],
+    "pricingTier": "team",
+    "source": "sowork/open-agent-marketplace",
+    "updatedAt": "2026-05-29"
+  },
+  {
+    "slug": "data-analyst",
+    "name": "Iris Morgan",
+    "title": "Marketplace Data Analyst",
+    "layer": "execution",
+    "category": "Analytics",
+    "primarySkill": "data-analysis",
+    "industries": [
+      "Marketplace",
+      "SaaS",
+      "Media"
+    ],
+    "summary": "Turns agent, skill, and squad metadata into rankings, categories, and quality signals.",
+    "exampleTasks": [
+      "Define marketplace ranking signals",
+      "Audit category coverage",
+      "Create weekly marketplace health metrics"
+    ],
+    "pricingTier": "team",
+    "source": "sowork/open-agent-marketplace",
+    "updatedAt": "2026-05-29"
+  },
+  {
+    "slug": "sales-enablement-writer",
+    "name": "Ethan Brooks",
+    "title": "Sales Enablement Writer",
+    "layer": "execution",
+    "category": "Sales",
+    "primarySkill": "sales-enablement",
+    "industries": [
+      "B2B",
+      "SaaS",
+      "Services"
+    ],
+    "summary": "Creates pitch decks, one-pagers, and buyer-facing copy from agent capabilities.",
+    "exampleTasks": [
+      "Write a sales one-pager",
+      "Create buyer objection responses",
+      "Turn agent workflows into proposal copy"
+    ],
+    "pricingTier": "starter",
+    "source": "sowork/open-agent-marketplace",
+    "updatedAt": "2026-05-29"
+  },
+  {
+    "slug": "seo-specialist",
+    "name": "Sofia Kim",
+    "title": "SEO Specialist",
+    "layer": "execution",
+    "category": "SEO",
+    "primarySkill": "seo-content-engine",
+    "industries": [
+      "SaaS",
+      "Ecommerce",
+      "Publisher"
+    ],
+    "summary": "Plans search-driven pages, keyword clusters, and content briefs for marketplace growth.",
+    "exampleTasks": [
+      "Build SEO category pages",
+      "Create keyword map",
+      "Write content briefs for long-tail agent use cases"
+    ],
+    "pricingTier": "team",
+    "source": "sowork/open-agent-marketplace",
+    "updatedAt": "2026-05-29"
+  },
+  {
+    "slug": "support-agent-designer",
+    "name": "Milo Grant",
+    "title": "Support Agent Designer",
+    "layer": "training",
+    "category": "Customer Success",
+    "primarySkill": "customer-support",
+    "industries": [
+      "SaaS",
+      "Ecommerce",
+      "Education"
+    ],
+    "summary": "Designs support workflows, escalation paths, and response libraries for AI-assisted service teams.",
+    "exampleTasks": [
+      "Create support playbook",
+      "Design escalation criteria",
+      "Build FAQ response templates"
+    ],
+    "pricingTier": "starter",
+    "source": "sowork/open-agent-marketplace",
+    "updatedAt": "2026-05-29"
+  }
+]

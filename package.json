@@ -1,0 +1,23 @@
+{
+  "name": "open-agent-marketplace",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Open-source starter kit for building searchable AI agent marketplaces.",
+  "scripts": {
+    "validate": "node scripts/validate-agents.js",
+    "sweep": "node scripts/sensitivity-sweep.js",
+    "demo": "npx http-server app/web -p 4173 -c-1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "keywords": [
+    "ai-agents",
+    "marketplace",
+    "agent-squads",
+    "open-source",
+    "skills",
+    "directory"
+  ],
+  "license": "MIT"
+}

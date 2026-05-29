@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Open Agent Marketplace</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#">~/open-agent-marketplace</a>
+    <nav>
+      <a href="#agents">Search</a>
+      <a href="#squads">Squads</a>
+      <a href="#api">API</a>
+      <a href="../../README.md">Docs</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">agents.marketplace</p>
+        <h1><span>&gt;</span> Open Agent Marketplace</h1>
+        <p class="subtitle"><span>&gt;</span> for building AI agent teams from reusable profiles</p>
+        <div class="code-card">
+          <p><b>const</b> agents = <strong>16,102</strong>;</p>
+          <p class="muted">// Discover, filter, and compose open-source AI agents</p>
+        </div>
+      </div>
+      <div class="window chart">
+        <div class="bar"><span></span><span></span><span></span><code>marketplace-trends.tsx</code></div>
+        <div class="bars"><i style="height:28%"></i><i style="height:45%"></i><i style="height:60%"></i><i style="height:72%"></i><i style="height:88%"></i></div>
+        <p class="muted">Based on public-safe agent metadata and squad composition patterns.</p>
+      </div>
+    </section>
+
+    <section id="agents" class="section window">
+      <div class="bar"><span></span><span></span><span></span><code>agents --list</code><em>ready</em></div>
+      <h2>Browse Agents</h2>
+      <label class="search"><small>Type to search agents</small><b>$ find</b><input id="q" placeholder="try growth strategist, frontend, content, analytics..." /></label>
+      <div id="agentGrid" class="grid"></div>
+    </section>
+
+    <section id="squads" class="section window">
+      <div class="bar"><span></span><span></span><span></span><code>squads.json</code><em>ready</em></div>
+      <h2>Browse Agent Squads</h2>
+      <div id="squadGrid" class="grid squads"></div>
+    </section>
+
+    <section id="api" class="api-card">
+      <b>GET</b><code>/api/v1/agents</code><span>200 OK</span>
+      <p>Expose public-safe agent and squad metadata through your own API.</p>
+    </section>
+  </main>
+
+  <footer>$ cat README.md · MIT · v0.1.0 · online</footer>
+  <script src="app.js"></script>
+</body>
+</html>
