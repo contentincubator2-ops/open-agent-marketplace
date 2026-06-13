@@ -15,3 +15,8 @@
 - Open questions
 - Risks or review needs
 - Recommended next action
+
+## Optional Hermes Tweet runbook
+
+Use `hermes-tweet-runbook.md` when the social-listening workflow runs through a
+Hermes Agent environment with Hermes Tweet installed for X research.
